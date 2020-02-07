@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Flutter Plugins" type="FlutterPluginsLibraryType">
+    <CLASSES>
+      <root url="file://C:/Flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-0.4.3" />
+      <root url="file://C:/Flutter/.pub-cache/hosted/pub.dartlang.org/admob_flutter-0.3.4" />
+      <root url="file://C:/Flutter/.pub-cache/hosted/pub.dartlang.org/facebook_audience_network-0.4.0" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

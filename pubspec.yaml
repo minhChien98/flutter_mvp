@@ -1,0 +1,174 @@
+name: mvp_flutter_tutorial
+description: A new Flutter project.
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# Read more about versioning at semver.org.
+version: 1.0.0+1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.2
+  shared_preferences: ^0.4.3
+  photo_view: ^0.9.0
+  intro_slider: ^2.2.8
+  carousel_pro: ^1.0.0
+  swipedetector: ^1.2.0
+  admob_flutter: ^0.3.4
+  facebook_audience_network: ^0.4.0
+  percent_indicator: ^2.1.1+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://www.dartlang.org/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - lib/locales/
+    - lib/assets/images/
+    - android/app/src/main/assets/1/
+    - android/app/src/main/assets/2/
+    - android/app/src/main/assets/3/
+    - android/app/src/main/assets/4/
+    - android/app/src/main/assets/5/
+    - android/app/src/main/assets/6/
+    - android/app/src/main/assets/7/
+    - android/app/src/main/assets/8/
+    - android/app/src/main/assets/9/
+    - android/app/src/main/assets/10/
+    - android/app/src/main/assets/11/
+    - android/app/src/main/assets/12/
+    - android/app/src/main/assets/13/
+    - android/app/src/main/assets/14/
+    - android/app/src/main/assets/15/
+    - android/app/src/main/assets/16/
+    - android/app/src/main/assets/17/
+    - android/app/src/main/assets/18/
+    - android/app/src/main/assets/19/
+    - android/app/src/main/assets/20/
+    - android/app/src/main/assets/21/
+    - android/app/src/main/assets/22/
+    - android/app/src/main/assets/23/
+    - android/app/src/main/assets/24/
+    - android/app/src/main/assets/25/
+    - android/app/src/main/assets/26/
+    - android/app/src/main/assets/27/
+    - android/app/src/main/assets/28/
+    - android/app/src/main/assets/29/
+    - android/app/src/main/assets/30/
+    - android/app/src/main/assets/31/
+    - android/app/src/main/assets/32/
+    - android/app/src/main/assets/33/
+    - android/app/src/main/assets/34/
+    - android/app/src/main/assets/35/
+    - android/app/src/main/assets/36/
+    - android/app/src/main/assets/37/
+    - android/app/src/main/assets/38/
+    - android/app/src/main/assets/39/
+    - android/app/src/main/assets/40/
+    - android/app/src/main/assets/41/
+    - android/app/src/main/assets/42/
+    - android/app/src/main/assets/43/
+    - android/app/src/main/assets/44/
+    - android/app/src/main/assets/45/
+    - android/app/src/main/assets/46/
+    - android/app/src/main/assets/47/
+    - android/app/src/main/assets/48/
+    - android/app/src/main/assets/49/
+    - android/app/src/main/assets/50/
+    - android/app/src/main/assets/51/
+    - android/app/src/main/assets/52/
+    - android/app/src/main/assets/53/
+    - android/app/src/main/assets/54/
+    - android/app/src/main/assets/55/
+    - android/app/src/main/assets/56/
+    - android/app/src/main/assets/57/
+    - android/app/src/main/assets/58/
+    - android/app/src/main/assets/59/
+    - android/app/src/main/assets/60/
+    - android/app/src/main/assets/61/
+    - android/app/src/main/assets/62/
+    - android/app/src/main/assets/63/
+    - android/app/src/main/assets/64/
+    - android/app/src/main/assets/65/
+    - android/app/src/main/assets/66/
+    - android/app/src/main/assets/67/
+    - android/app/src/main/assets/68/
+    - android/app/src/main/assets/69/
+    - android/app/src/main/assets/70/
+    - android/app/src/main/assets/71/
+    - android/app/src/main/assets/72/
+    - android/app/src/main/assets/73/
+    - android/app/src/main/assets/74/
+    - android/app/src/main/assets/75/
+    - android/app/src/main/assets/76/
+    - android/app/src/main/assets/77/
+    - android/app/src/main/assets/78/
+    - android/app/src/main/assets/79/
+    - android/app/src/main/assets/80/
+    - android/app/src/main/assets/81/
+    - android/app/src/main/assets/82/
+    - android/app/src/main/assets/83/
+    - android/app/src/main/assets/84/
+    - android/app/src/main/assets/85/
+    - android/app/src/main/assets/86/
+    - android/app/src/main/assets/87/
+    - android/app/src/main/assets/88/
+    - android/app/src/main/assets/89/
+    - android/app/src/main/assets/90/
+    - android/app/src/main/assets/91/
+    - android/app/src/main/assets/92/
+    - android/app/src/main/assets/93/
+    - android/app/src/main/assets/94/
+    - android/app/src/main/assets/95/
+    - android/app/src/main/assets/96/
+    - android/app/src/main/assets/97/
+    - android/app/src/main/assets/98/
+    - android/app/src/main/assets/99/
+    - android/app/src/main/assets/100/
+
+  #  - images/a_dot_ham.jpeg
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.io/assets-and-images/#resolution-aware.
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.io/assets-and-images/#from-packages
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.io/custom-fonts/#from-packages

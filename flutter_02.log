@@ -1,0 +1,99 @@
+Flutter crash report; please file at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter build bundle --target C:\Users\Dell\Desktop\FlutterTutorial\lib\main.dart --target-platform android-arm64 --filesystem-scheme org-dartlang-root --track-widget-creation --depfile C:\Users\Dell\Desktop\FlutterTutorial\build\app\intermediates\flutter\debug\android-arm64/snapshot_blob.bin.d --asset-dir C:\Users\Dell\Desktop\FlutterTutorial\build\app\intermediates\flutter\debug\android-arm64/flutter_assets --debug
+
+## exception
+
+NoSuchMethodError: NoSuchMethodError: The getter 'length' was called on null.
+Receiver: null
+Tried calling: length
+
+```
+#0      Object.noSuchMethod (dart:core-patch/object_patch.dart:51:5)
+#1      _Uri._uriEncode (dart:core-patch/uri_patch.dart:44:23)
+#2      Uri.encodeFull (dart:core/uri.dart:1148:17)
+#3      MappedListIterable.elementAt (dart:_internal/iterable.dart:415:29)
+#4      MappedListIterable.elementAt (dart:_internal/iterable.dart:415:40)
+#5      ListIterable.toList (dart:_internal/iterable.dart:219:19)
+#6      FlutterManifest.assets (package:flutter_tools/src/flutter_manifest.dart:198:11)
+#7      _parseAssets (package:flutter_tools/src/asset.dart:571:40)
+#8      _ManifestAssetBundle.build (package:flutter_tools/src/asset.dart:146:53)
+<asynchronous suspension>
+#9      AssetOutputBehavior.outputs (package:flutter_tools/src/build_system/targets/assets.dart:77:17)
+#10     SourceVisitor.visitBehavior (package:flutter_tools/src/build_system/source.dart:182:37)
+#11     _SourceBehavior.accept (package:flutter_tools/src/build_system/source.dart:262:49)
+#12     Target._resolveConfiguration (package:flutter_tools/src/build_system/build_system.dart:230:14)
+#13     Target.resolveOutputs (package:flutter_tools/src/build_system/build_system.dart:188:12)
+#14     Target._toNode (package:flutter_tools/src/build_system/build_system.dart:132:39)
+#15     BuildSystem.build (package:flutter_tools/src/build_system/build_system.dart:416:30)
+#16     _AsyncAwaitCompleter.start (dart:async-patch/async_patch.dart:43:6)
+#17     BuildSystem.build (package:flutter_tools/src/build_system/build_system.dart:401:28)
+#18     buildWithAssemble (package:flutter_tools/src/bundle.dart:171:48)
+#19     _AsyncAwaitCompleter.start (dart:async-patch/async_patch.dart:43:6)
+#20     buildWithAssemble (package:flutter_tools/src/bundle.dart:147:31)
+#21     BundleBuilder.build (package:flutter_tools/src/bundle.dart:85:13)
+#22     _AsyncAwaitCompleter.start (dart:async-patch/async_patch.dart:43:6)
+#23     BundleBuilder.build (package:flutter_tools/src/bundle.dart:58:21)
+#24     BuildBundleCommand.runCommand (package:flutter_tools/src/commands/build_bundle.dart:126:25)
+#25     _AsyncAwaitCompleter.start (dart:async-patch/async_patch.dart:43:6)
+#26     BuildBundleCommand.runCommand (package:flutter_tools/src/commands/build_bundle.dart:97:42)
+#27     FlutterCommand.verifyThenRunCommand (package:flutter_tools/src/runner/flutter_command.dart:553:18)
+#28     _asyncThenWrapperHelper.<anonymous closure> (dart:async-patch/async_patch.dart:71:64)
+#29     _rootRunUnary (dart:async/zone.dart:1132:38)
+#30     _CustomZone.runUnary (dart:async/zone.dart:1029:19)
+#31     _FutureListener.handleValue (dart:async/future_impl.dart:137:18)
+#32     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:678:45)
+#33     Future._propagateToListeners (dart:async/future_impl.dart:707:32)
+#34     Future._completeWithValue (dart:async/future_impl.dart:522:5)
+#35     Future._asyncComplete.<anonymous closure> (dart:async/future_impl.dart:552:7)
+#36     _rootRun (dart:async/zone.dart:1124:13)
+#37     _CustomZone.run (dart:async/zone.dart:1021:19)
+#38     _CustomZone.runGuarded (dart:async/zone.dart:923:7)
+#39     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:963:23)
+#40     _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#41     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#42     _runPendingImmediateCallback (dart:isolate-patch/isolate_patch.dart:116:13)
+#43     _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:173:5)
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel beta, v1.10.7, on Microsoft Windows [Version 10.0.17763.914], locale en-US)
+    • Flutter version 1.10.7 at C:\Flutter
+    • Framework revision e70236e36c (3 months ago), 2019-10-02 09:32:30 -0700
+    • Engine revision 9e6314d348
+    • Dart version 2.6.0 (build 2.6.0-dev.4.0 1103600280)
+
+[!] Android toolchain - develop for Android devices (Android SDK version 28.0.3)
+    • Android SDK at C:/Users/Dell/AppData/Local/Android/Sdk
+    • Android NDK location not configured (optional; useful for native profiling support)
+    • Platform android-28, build-tools 28.0.3
+    • ANDROID_HOME = C:/Users/Dell/AppData/Local/Android/Sdk
+    • Java binary at: C:\Program Files\Android\Android Studio\jre\bin\java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_202-release-1483-b03)
+    ! Some Android licenses not accepted.  To resolve this, run: flutter doctor --android-licenses
+
+[!] Android Studio (version 3.0)
+    • Android Studio at F:\New folder
+    ✗ Flutter plugin not installed; this adds Flutter specific functionality.
+    ✗ Dart plugin not installed; this adds Dart specific functionality.
+    • Java version OpenJDK Runtime Environment (build 1.8.0_152-release-915-b01)
+
+[✓] Android Studio (version 3.5)
+    • Android Studio at C:\Program Files\Android\Android Studio
+    • Flutter plugin version 41.1.2
+    • Dart plugin version 191.8593
+    • Java version OpenJDK Runtime Environment (build 1.8.0_202-release-1483-b03)
+
+[✓] VS Code (version 1.41.1)
+    • VS Code at C:\Users\Dell\AppData\Local\Programs\Microsoft VS Code
+    • Flutter extension version 3.7.1
+
+[✓] Connected device (1 available)
+    • Redmi Note 4 • 204af0ea0304 • android-arm64 • Android 7.0 (API 24)
+
+! Doctor found issues in 2 categories.
+```
